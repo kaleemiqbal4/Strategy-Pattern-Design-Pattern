@@ -32,10 +32,10 @@ namespace Startegy_Pattern
         public void DoSomeBusinessLogic()
         {
             Console.WriteLine("Context: Sorting data using the strategy (not sure how it'll do it)");
-            List<string> result = this._orderCharList.OrderList(new List<string> { "a", "b", "c", "d", "e" });
+            var result = this._orderCharList.OrderList(new List<string> { "a", "b", "c", "d", "e" });
 
             string resultStr = string.Empty;
-            foreach (var element in result as List<string>)
+            foreach (var element in result)
             {
                 resultStr += element + ",";
             }

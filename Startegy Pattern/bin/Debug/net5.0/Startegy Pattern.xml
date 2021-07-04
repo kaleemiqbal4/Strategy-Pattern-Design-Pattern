@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Startegy Pattern</name>
+    </assembly>
+    <members>
+        <member name="T:Startegy_Pattern.IOrderList">
+            <summary>Set Order of the List</summary>
+        </member>
+        <member name="M:Startegy_Pattern.IOrderList.OrderList(System.Collections.Generic.List{System.String})">
+            <summary>Set Order of List</summary>
+        </member>
+        <member name="T:Startegy_Pattern.OrderListReverse">
+            <summary>Reverse the List</summary>
+        </member>
+        <member name="M:Startegy_Pattern.OrderListReverse.OrderList(System.Collections.Generic.List{System.String})">
+            <summary>Method to Sort Order</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Startegy_Pattern.OrderListSort">
+            <summary>Concrete class to Sort Order of Given List</summary>
+        </member>
+        <member name="M:Startegy_Pattern.OrderListSort.OrderList(System.Collections.Generic.List{System.String})">
+            <summary>Method to Sort Order</summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Startegy_Pattern.Strategy">
+            <summary>Strategy Class</summary>
+        </member>
+        <member name="M:Startegy_Pattern.Strategy.#ctor">
+            <summary></summary>
+        </member>
+        <member name="M:Startegy_Pattern.Strategy.#ctor(Startegy_Pattern.IOrderList)">
+            <summary>Constructor to initialize readonly properties</summary>
+            <param name="orderCharList"></param>
+        </member>
+        <member name="M:Startegy_Pattern.Strategy.SetStrategy(Startegy_Pattern.IOrderList)">
+            <summary> Usually, the Context allows replacing a Strategy object at runtime.</summary>
+            <param name="orderCharList"></param>
+        </member>
+        <member name="M:Startegy_Pattern.Strategy.DoSomeBusinessLogic">
+            <summary>Print String</summary>
+        </member>
+    </members>
+</doc>
